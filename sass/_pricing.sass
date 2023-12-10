@@ -1,0 +1,55 @@
+.pricing
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: $section-padding
+  &__title
+    @include section-title
+  &__desc
+    @include section-desc
+  &__cards-container
+    display: flex
+    column-gap: $gap-xl
+    margin-top: $section-padding
+  &__card
+    @include rounded
+    display: flex
+    flex-direction: column
+    flex-basis: 1fr
+    padding: $gap-2xl $gap-xl
+    background-color: $white-50
+  &__price-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__per-month
+    color: $grey
+  &__card-btn
+    @include button
+    @include rounded
+    @include text-base
+    margin-top: $gap-md
+    padding-block: $gap-md
+    background-color: $blue
+    font-weight: 700
+  &__plan-features
+    display: flex
+    flex-direction: column
+    row-gap: $gap-md
+    margin-top: $gap-lg
+    padding-top: $gap-lg
+    border-top: 1px solid $white-100
+  &__feature
+    display: flex
+    align-items: center
+    column-gap: $gap-md
+  &__icon-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    width: $gap-md
+    height: $gap-md
+    background-color: $white-100
+    fill: $blue
+  &__feature-text
+    margin: 0

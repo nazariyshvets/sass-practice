@@ -1,0 +1,78 @@
+.blogs
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: $section-padding
+  &__title
+    @include section-title
+  &__desc
+    @include section-desc
+  &__container
+    display: flex
+    column-gap: $gap-xl
+    margin-top: $section-padding
+  &__blog
+    @include rounded
+    overflow: hidden
+  &__blog-img-wrapper
+    position: relative
+  &__blog-img
+    width: 100%
+    height: 14rem
+    object-fit: cover
+    object-position: top
+  &__category
+    @include rounded
+    @include text-sm
+    position: absolute
+    top: $gap-md
+    right: $gap-lg
+    padding: $gap-sm $gap-md
+    background-color: $blue
+    font-weight: 600
+  &__blog-info
+    display: flex
+    flex-direction: column
+    padding: $gap-lg
+    background-color: $white-50
+  &__blog-title
+    @include text-2xl
+    font-weight: 700
+  &__blog-desc
+    @include text-base
+    margin-top: 1rem
+  &__pub-details
+    display: flex
+    align-items: center
+    margin-top: $gap-xl
+    padding-top: $gap-xl
+    border-top: 1px solid $white-100
+  &__author
+    display: flex
+    align-items: center
+    column-gap: $gap-md
+  &__author-info
+    display: flex
+    flex-direction: column
+    justify-content: center
+  &__published-by
+    @include text-sm
+    font-weight: 500
+  &__job-position
+    @include text-xs
+    margin-top: 0.4rem
+    color: $grey
+  &__date
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin-left: $gap-md
+    padding-left: $gap-md
+    border-left: 1px solid $white-100
+  &__date-title
+    @include text-sm
+    font-weight: 500
+  &__year
+    @include text-xs
+    margin-top: 0.4rem
+    color: $grey

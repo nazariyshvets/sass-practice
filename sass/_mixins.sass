@@ -1,0 +1,63 @@
+@mixin text-xs
+  font-size: .75em
+  line-height: 1rem
+  
+@mixin text-sm
+  font-size: .875rem
+  line-height: 1.25rem
+
+@mixin text-base
+  font-size: 1rem
+  line-height: 1.5rem
+
+@mixin text-lg
+  font-size: 1.125rem
+  line-height: 1.75rem
+
+@mixin text-xl
+  font-size: 1.25rem
+  line-height: 1.75rem
+
+@mixin text-2xl
+  font-size: 1.5rem
+  line-height: 2rem
+  
+@mixin text-3xl
+  font-size: 1.875rem
+  line-height: 2.25rem
+
+@mixin text-4xl
+  font-size: 2.25rem
+  line-height: 2.5rem
+
+@mixin text-5xl
+  font-size: 3rem
+  line-height: 4rem
+
+@mixin rounded
+  border-radius: .5rem
+
+@mixin rounded-full
+  border-radius: 9999px
+
+@mixin bg-blured
+  backdrop-filter: blur(.25rem)
+
+@mixin button
+  border: none
+  background: transparent
+  font-size: 1rem
+  cursor: pointer
+
+@mixin section-title
+  width: 50%
+  text-align: center
+
+@mixin section-desc
+  width: 50%
+  text-align: center
+
+@mixin grid($colNum: 3, $gap: $gap-3xl)
+  display: grid
+  grid-template-columns: repeat($colNum, 1fr)
+  gap: $gap

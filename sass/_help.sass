@@ -1,0 +1,35 @@
+.help
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-block: $section-padding
+  &__title
+    @include section-title
+  &__desc
+    @include section-desc
+  &__video-section
+    width: 100%
+    padding: $section-padding
+    background-image: url("/images/video/shape.svg")
+    background-position: left bottom
+    background-repeat: no-repeat
+    background-size: 100%
+  &__video-container
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+  &__video-thumbnail
+    @include rounded
+  &__video-play
+    @include button
+    @include rounded-full
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 1.5rem
+    background-color: $white-800
+    fill: $blue
+    &:hover
+      background-color: $white

@@ -1,0 +1,41 @@
+.footer
+  display: flex
+  column-gap: $gap-md
+  padding: $section-padding
+  background: $blue-50
+  &__brand-container
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    row-gap: $gap-2xl
+    width: 40%
+  &__logo
+    height: 1.7rem
+  &__desc
+    @include text-base
+    width: 60%
+    font-weight: 500
+  &__socials-container
+    display: flex
+    align-items: center
+    column-gap: $gap-lg
+  &__social-wrapper
+    fill: $white-800
+    cursor: pointer
+    &:hover
+      fill: $blue
+  &__links-container
+    display: flex
+    flex-direction: column
+    row-gap: $gap-xl
+    width: 20%
+  &__links-title
+    @include text-xl
+  &__links
+    display: flex
+    flex-direction: column
+    row-gap: $gap-lg
+  &__link
+    color: $grey
+    &:hover
+      color: $blue

@@ -1,0 +1,24 @@
+.about
+  display: flex
+  column-gap: 10rem
+  padding: $section-padding
+  &__container
+    flex-basis: 1fr
+  &__advantages-container
+    @include grid(2, $gap-md)
+    margin-top: 2rem
+  &__advantage
+    display: flex
+    align-items: center
+    column-gap: $gap-md
+  &__check-mark-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 1.85rem
+    height: 1.85rem
+    background-color: $blue-100
+    fill: $blue
+  &__advantage-text
+    font-weight: 500
+  

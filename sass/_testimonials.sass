@@ -1,0 +1,40 @@
+.testimonials
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: $section-padding
+  &__title
+    @include section-title
+  &__desc
+    @include section-desc
+  &__cards-container
+    display: flex
+    column-gap: $gap-xl
+    margin-top: $section-padding
+  &__card
+    flex-basis: 1fr
+    padding: $gap-xl
+    background-color: $white-50
+  &__stars-container
+    display: flex
+    column-gap: $gap-xs
+  &__star-wrapper
+    fill: $yelloworange
+  &__comment
+    @include text-base
+  &__author
+    display: flex
+    align-items: center
+    column-gap: $gap-md
+    margin-top: $gap-xl
+    padding-top: $gap-xl
+    border-top: 1px solid $white-100
+  &__author-info
+    display: flex
+    flex-direction: column
+    justify-content: center
+  &__author-fullname
+    margin: 0
+  &__author-job-position
+    @include text-sm
+    margin: 0

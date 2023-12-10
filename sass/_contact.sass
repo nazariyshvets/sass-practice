@@ -1,0 +1,41 @@
+.contact
+  display: flex
+  column-gap: $gap-xl
+  padding: $section-padding
+  &__container
+    @include rounded
+    padding: $gap-3xl
+    background-color: $white-50
+  &__ticket-form
+    display: flex
+    flex-direction: column
+    row-gap: $gap-xl
+    margin-top: $gap-3xl
+  &__name-email-container
+    display: flex
+    column-gap: $gap-2xl
+  &__btn
+    @include button
+    @include rounded
+    @include text-base
+    width: fit-content
+    padding: $gap-md $gap-xl
+    background-color: $blue
+    font-weight: 500  
+  &__subscribe-form
+    @extend .contact__ticket-form
+    row-gap: $gap-md
+    margin-top: $gap-2xl
+    padding-top: $gap-2xl
+    border-top: 1px solid $white-200
+  &__subscribe
+    width: 100%
+  &__no-spam
+    @include text-sm
+    text-align: center
+  &__container:nth-child(1)
+    width: 67%
+  &__container:nth-child(2)
+    width: 33%
+    padding: $gap-2xl
+    background-color: $blue-100

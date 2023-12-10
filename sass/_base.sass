@@ -1,0 +1,66 @@
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  font-family: $font-stack
+  color: $white
+  transition: color 0.15s, background-color 0.15s
+  
+body
+  background: $black
+  background-image: url("/images/hero/shape-01.svg")
+  background-position: right top
+  background-repeat: no-repeat
+  
+section:nth-child(2n)
+  background: $blue-50
+
+h1
+  @include text-5xl
+  margin-block: 1rem
+
+h2
+  @include text-3xl
+  margin-block: 1rem
+
+h3
+  @include text-2xl
+  margin-block: 1rem
+
+h4
+  @include text-lg
+  margin-block: 1rem
+
+p
+  @include text-lg
+  margin-block: 1rem
+  color: $grey
+
+a
+  text-decoration: none
+
+ul
+  list-style-type: none
+
+label
+  @include text-sm
+  display: flex
+  flex-direction: column
+  row-gap: $gap-md
+  width: 100%
+  font-weight: 500
+input
+  @include rounded
+  @include text-base
+  width: 100%
+  padding: $gap-md $gap-xl
+  border: none
+  outline: none
+  background-color: $white-50
+  &:focus
+    outline: 1px solid $blue
+  &::placeholder
+    color: $grey
+textarea
+  @extend input
+  resize: none
